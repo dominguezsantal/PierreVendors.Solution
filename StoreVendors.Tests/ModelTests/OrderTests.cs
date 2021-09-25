@@ -40,6 +40,18 @@ namespace StoreVendors.Tests
 		
 		}
 		
+		[TestMethod]
+        public void GetAnotherName_SetName_String()
+        {
+        string name = "Jeff Bezos";
+        Order newOrder = new Order(name, "07/05/1994", "Vendor since Amazon's day one as company!");
+
+        string updatedName = "BezosRules";
+        newOrder.Name = updatedName;
+        string vendorResult = newOrder.Name;
+
+        Assert.AreEqual(updatedBillionaire, vendorResult);
+        }
 
     }
 } 
