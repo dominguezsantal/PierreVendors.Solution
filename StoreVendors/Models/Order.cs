@@ -10,7 +10,7 @@ namespace StoreVendors.Models
 	public string Desc { get; set; }
 	public string Cost { get; set; }
 	public int Id { get; }
-	private static List<Order> _instances = New List<Order> { };
+	private static List<Order> _instances = new List<Order> { };
 
 	public Order(string name, string date, string desc, string cost)
 	{
