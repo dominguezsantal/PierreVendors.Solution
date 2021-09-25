@@ -1,4 +1,4 @@
-# _MVC Template_
+# _Vendor Application_
 
 #### By _**Alex G.Dominguez **_
 
