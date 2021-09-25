@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using Vendor.Models;
+using StoreVendors.Models;
 using System.Collections.Generic;
 
 namespace StoreVendors.Controllers

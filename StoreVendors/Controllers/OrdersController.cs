@@ -1,5 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
-using PierresVendors.Models;
+using StoreVendors.Models;
 using System.Collections.Generic;
 
 namespace StoreVendors.Controllers
