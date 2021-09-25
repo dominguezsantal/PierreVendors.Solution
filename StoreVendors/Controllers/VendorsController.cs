@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Vendor.Models;
 using System.Collections.Generic;
 
-namespace Vendor.Controllers
+namespace StoreVendors.Controllers
 {
 public class VendorsController : Controller
 	{
