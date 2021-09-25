@@ -10,7 +10,7 @@ namespace PierresVendors.Tests
     {
         public void Dispose()
         {
-            Order.ClearAll();
+        Order.ClearAll();
         }
 
         [TestMethod]
