@@ -62,7 +62,22 @@ public class VendorTest : IDisposable
     Vendor result = Vendor.Find(2);
     Assert.AreEqual(newVendor2, result);
     }
+	[TestMethod]
+    public void AddOrder_OrderWithVendorMatch_OrderList()
+    {
+    string name1 = "Jeff Bezos";
+    string desc1 = "Amazon provided our kitchen products";
+    string date1 = "07/04/1994";
+    string cost1 = "$33,000";
+    Order newOrder = new Order(name1, desc1, date1, cost1);
+    List<Order> newList = new List<Order> { newOrder };
+    string desc2 = "Need more kitchen tools";
+    Vendor newVendor = new Vendor(desc2);
+    newVendor.AddOrder(newOrder);
 
+	List<Order> result = newVendor.Orders;
+	
+	
 
 
 
