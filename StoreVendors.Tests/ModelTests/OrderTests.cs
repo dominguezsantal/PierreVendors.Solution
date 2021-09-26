@@ -97,7 +97,7 @@ namespace StoreVendors.Tests
 
         Order result = Order.Find(2);
 
-        Assert.AreEqual(newOrder, result);
+        Assert.AreEqual(newOrder3, result);
         }
 
 
