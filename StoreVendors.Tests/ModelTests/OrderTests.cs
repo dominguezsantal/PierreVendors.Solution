@@ -90,14 +90,14 @@ namespace StoreVendors.Tests
 		[TestMethod]
         public void Find_ReturnsCorrectOrder_Order()
         {
-        string vendor3 = "Larry Ellison";
-        string vendor4 = "Steve Ballmer";
-        Order newOrder3 = new Order(vendor3, "06/17/1977", "Oracle provided our first CRM software", "$2,000");
-        Order newOrder4 = new Order(vendor4, "02/14/2020", "Windows desktop consultant", "$3,000");
+        string vendor1 = "Larry Ellison";
+        string vendor2 = "Steve Ballmer";
+        Order newOrder1 = new Order(vendor1, "06/17/1977", "Oracle provided our first CRM software", "$2,000");
+        Order newOrder2 = new Order(vendor2, "02/14/2020", "Windows desktop consultant", "$3,000");
 
         Order result = Order.Find(2);
 
-        Assert.AreEqual(newOrder3, result);
+        Assert.AreEqual(newOrder2, result);
         }
 
 
