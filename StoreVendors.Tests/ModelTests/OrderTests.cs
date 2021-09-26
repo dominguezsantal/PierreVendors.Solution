@@ -70,7 +70,7 @@ namespace StoreVendors.Tests
         string vendor2 = "Warren Buffett";
         Order newOrder1 = new Order(vendor1, "4/4/1975", "Bill provided our bakery's first computers for Pierre's computer cafe", "$7,218");
         Order newOrder2 = new Order(vendor2, "02/14/2020", "Warren lease our current location", "22,000");
-        List<Order> newList = new List<Order> { newOrder, newOrder2 };
+        List<Order> newList = new List<Order> { newOrder1, newOrder2 };
 
         List<Order> result = Order.GetAll();
 
