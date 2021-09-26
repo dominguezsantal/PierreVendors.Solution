@@ -52,6 +52,18 @@ public class VendorTest : IDisposable
     CollectionAssert.AreEqual(newList, result);
     }
 
+	[TestMethod]
+    public void Find_ReturnsCorrectVendor_Vendor()
+    {
+    string name01 = "Jeff Bezos";
+    string name02 = "Bill Gates";
+    Vendor newVendor1 = new Vendor(name01);
+    Vendor newVendor2 = new Vendor(name02);
+    Vendor result = Vendor.Find(2);
+    
+    }
+
+
 
 
     
