@@ -87,5 +87,19 @@ namespace StoreVendors.Tests
         Assert.AreEqual(1, result);
         }
 
+		[TestMethod]
+        public void Find_ReturnsCorrectOrder_Order()
+        {
+        string vendor3 = "Larry Ellison";
+        string vendor4 = "Steve Ballmer";
+        Order newOrder3 = new Order(vendor3, "06/17/1977", "Oracle provided our first CRM software", "$2,000");
+        Order newOrder4 = new Order(vendor4, "02/14/2020", "Windows desktop consultant", "$3,000");
+
+        Order result = Order.Find(2);
+
+        Assert.AreEqual(newOrder, result);
+        }
+
+
     }
 } 
