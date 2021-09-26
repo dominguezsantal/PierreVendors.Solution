@@ -37,7 +37,7 @@ public class VendorTest : IDisposable
     string name = "Test Vendor";
     Vendor newVendor = new Vendor(name);
     int result = newVendor.Id;
-    Assert.AreEqual(1, notAVendor);
+    Assert.AreEqual(1, result);
     }
 
 
