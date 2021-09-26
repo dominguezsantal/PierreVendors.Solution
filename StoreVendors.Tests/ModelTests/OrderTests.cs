@@ -76,7 +76,16 @@ namespace StoreVendors.Tests
 
         CollectionAssert.AreEqual(newList, result);
         }
+		[TestMethod]
+        public void GetId_InstantiateOrdersWithAnIdAndGetterReturns_Int()
+        {
+        string name = "Elon Musk";
+        Order newOrder = new Order(name, "05/06/2002", "SpaceX provides interplanetary dough for bread", "$1,000,000");
 
+        int result = newOrder.Id;
+
+        Assert.AreEqual(1, Tesla);
+        }
 
     }
 } 
