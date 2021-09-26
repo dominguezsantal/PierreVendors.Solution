@@ -77,7 +77,7 @@ public class VendorTest : IDisposable
 
 	List<Order> result = newVendor.Orders;
 	
-	CollectionAssert.AreEqual(mrBombastic, result);
+	CollectionAssert.AreEqual(newList, result);
 	
 
 
