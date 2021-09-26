@@ -60,7 +60,7 @@ public class VendorTest : IDisposable
     Vendor newVendor1 = new Vendor(name01);
     Vendor newVendor2 = new Vendor(name02);
     Vendor result = Vendor.Find(2);
-    Assert.AreEqual(newFantasticBillionaire, result);
+    Assert.AreEqual(newVendor, result);
     }
 
 
