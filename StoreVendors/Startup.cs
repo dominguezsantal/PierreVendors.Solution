@@ -8,7 +8,7 @@ namespace StoreVendors
 {
 public class Startup
 {
-    public Startup(IHostingEnvironment env)
+    public Startup(Microsoft.AspNetCore.Hosting.IWebHostEnvironment env)
     {
     var builder = new ConfigurationBuilder()
         .SetBasePath(env.ContentRootPath)
@@ -20,7 +20,7 @@ public class Startup
 
     public void ConfigureServices(IServiceCollection services)
     {
-    services.AddMvc();
+    services.AddMvc(option => option.EnableEndpointRouting = false);
     }
 
     public void Configure(IApplicationBuilder app)

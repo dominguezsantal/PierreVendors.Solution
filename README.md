@@ -21,12 +21,18 @@
   * Enter "Template" in the directory
   * Type "dotnet run" in GitBash to run the program
   
+  * Testing
+  Navigate to StoreVendors.Tests by running cd StoreVendors.Tests.
+Run dotnet restore to retrieve and install the packages we listed in StoreVendors.csproj.
+Run dotnet test.
+
+
 
 * Cloning
   * Clone github repo: https://github.com/dominguezsantal/PierresVendors.Solution.git
 * Navigate the directory: (cd top name directory)
 * Open in Vs code: code .
-* Navigate to the ProjectName.Tests within the terminal: cd Bakery.Tests
+* Navigate to the ProjectName.Tests within the terminal: cd StoreVendors.Tests
 * Run: dotnet restore
 * The line above will create your obj directories.
 
