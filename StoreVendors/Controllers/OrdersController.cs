@@ -17,6 +17,7 @@ public class OrdersController : Controller
     public ActionResult Show(int vendorId, int orderId)
     {
     Order orders = Order.Find(orderId);
+
     
     Vendor vendors = Vendor.Find(vendorId);
     Dictionary<string, object> model = new Dictionary<string, object>();
